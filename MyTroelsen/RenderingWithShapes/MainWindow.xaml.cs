@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -39,7 +40,15 @@ namespace RenderingWithShapes
             switch (currentShape)
             {
                 case SelectedShape.Circle:
-                    shapeToRender = new Ellipse { Fill = Brushes.Green, Height=35,Width=35};
+                    shapeToRender = new Ellipse {  Height=35,Width=35};
+                    RadialGradientBrush rgb = new RadialGradientBrush();
+                    rgb.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF0E980E"), 0.486));
+                    rgb.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("White"), 0.978));
+                    rgb.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("Black"), 0.007));
+                    rgb.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("Black"), 0.009));
+
+                    shapeToRender.Fill = rgb;
+
                     break;
                 case SelectedShape.Rectangle:
                     shapeToRender = new Rectangle { Fill = Brushes.Red, Height = 35, Width = 35, RadiusX = 10, RadiusY = 10 };
@@ -65,6 +74,12 @@ namespace RenderingWithShapes
                         StrokeEndLineCap = PenLineCap.Round
                     };
                     break;
+            }
+
+            if (flipCave.IsChecked == true)
+            {
+                RotateTransform rt = new RotateTransform(-180);
+                shapeToRender.RenderTransform = rt;
             }
 
             Canvas.SetLeft(shapeToRender, e.GetPosition(canvasDrawingArea).X);
@@ -105,6 +120,22 @@ namespace RenderingWithShapes
             {
                 canvasDrawingArea.Children.Remove(result.VisualHit as Shape);
             }
+        }
+
+        private void flipCanvas_Click(object sender, RoutedEventArgs e)
+        {
+
+            ToggleButton tb = (ToggleButton)sender;
+
+
+            if (tb.IsChecked == true)
+            {
+                RotateTransform rt = new RotateTransform(-180);
+                canvasDrawingArea.LayoutTransform = rt;
+            }
+            else canvasDrawingArea.LayoutTransform = null;
+
+
         }
     }
 }

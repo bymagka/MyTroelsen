@@ -9,7 +9,16 @@
     <DockPanel>
         <ToolBar DockPanel.Dock="Top" Height="60" x:Name="mainToolBar">
             <RadioButton Name="circleOption" GroupName="shapeSelection" Click="Click">
-                <Ellipse Fill="Green" Height="35" Width="35"/>
+                <Ellipse Height="35" Width="35">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF0E980E" Offset="0.486"/>
+                            <GradientStop Color="White" Offset="0.978"/>
+                            <GradientStop Color="Black" Offset="0.007"/>
+                            <GradientStop Color="Black" Offset="0.009"/>
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
             </RadioButton>
             <RadioButton Name="rectOption" GroupName="shapeSelection" Click="Click">
                 <Rectangle Fill="Red" Height="35" Width="35" RadiusX="10" RadiusY="10" />
@@ -27,7 +36,10 @@
                     </Path.Data>
                 </Path>
             </RadioButton>
+            <ToggleButton x:Name="flipCave" Content="Flip canvas!" Click="flipCanvas_Click"/>
         </ToolBar>
-        <Canvas Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="canvasDrawingArea_MouseLeftButtonDown" MouseRightButtonDown="canvasDrawingArea_MouseRightButtonDown"/>
+        <Canvas Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="canvasDrawingArea_MouseLeftButtonDown"
+                MouseRightButtonDown="canvasDrawingArea_MouseRightButtonDown"
+                ClipToBounds="True"/>
     </DockPanel>
 </Window>
