@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithTransforms", "FunWit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderingWithVisuals", "RenderingWithVisuals\RenderingWithVisuals.csproj", "{EE7288C1-8D09-46D0-AC5E-DB2EE3624AAC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WpfResourcesAnimationStylesTemplates", "WpfResourcesAnimationStylesTemplates", "{20E3D8FF-71B6-43B8-8178-DFBA0781604E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryResourcesApp", "BinaryResourcesApp\BinaryResourcesApp.csproj", "{28567A21-1CC1-4C5E-BD98-019F97AE82EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{EE7288C1-8D09-46D0-AC5E-DB2EE3624AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE7288C1-8D09-46D0-AC5E-DB2EE3624AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE7288C1-8D09-46D0-AC5E-DB2EE3624AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28567A21-1CC1-4C5E-BD98-019F97AE82EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28567A21-1CC1-4C5E-BD98-019F97AE82EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28567A21-1CC1-4C5E-BD98-019F97AE82EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28567A21-1CC1-4C5E-BD98-019F97AE82EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{547F63F4-9710-4E0D-88C7-CCDF8F1953B8} = {4D181058-00C1-416B-9999-C8B0C66E063D}
 		{6306B7A4-7E0B-4586-86AE-0D6031FB0F3A} = {4D181058-00C1-416B-9999-C8B0C66E063D}
+		{EE7288C1-8D09-46D0-AC5E-DB2EE3624AAC} = {4D181058-00C1-416B-9999-C8B0C66E063D}
+		{28567A21-1CC1-4C5E-BD98-019F97AE82EB} = {20E3D8FF-71B6-43B8-8178-DFBA0781604E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CD562D3-562C-462F-BC79-41C21053C533}
