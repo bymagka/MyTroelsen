@@ -23,6 +23,20 @@ namespace WpfStyles
         public MainWindow()
         {
             InitializeComponent();
+            lstStyles.Items.Add("GrowingButton");
+            lstStyles.Items.Add("BasicControl");
+            lstStyles.Items.Add("TiltButton");
+       
+        }
+
+
+
+        private void lstStyles_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var currStyle = (Style)TryFindResource(lstStyles.SelectedValue);
+
+            if (currStyle == null) return;
+            else btnStyles.Style = currStyle;
         }
     }
 }

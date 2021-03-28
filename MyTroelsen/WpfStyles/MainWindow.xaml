@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfStyles"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="750" Width="800">
+    <StackPanel>
+
+        <Label Content="Label" Width="150"/>
+        <Button x:Name="btnStyle" Content="It's style button!" Width="150" Cursor="Help" Style="{StaticResource ResourceKey=TiltButton}"/>
+        <Button Style="{x:Null}" Content="It's new button" Height="30" Width="20" BorderBrush="Aquamarine" Foreground="Yellow" BorderThickness="3"/>
+        <TextBox x:Name="tbEnterSmth"/>
+        <Button x:Name="btnSeek"/>
+        <DockPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,0">
+                <Label Content="Please pick a style for this button" Height="50"/>
+                <ListBox x:Name="lstStyles" Height="80" Width="150" Background="LightBlue" SelectionChanged="lstStyles_SelectionChanged"/>
+            </StackPanel>
+            <Button x:Name="btnStyles" Content="OK!" Height="40" Width="100"/>
+        </DockPanel>
+    </StackPanel>
+    
 </Window>
