@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpinningButtonAnimationApp"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStyles", "WpfStyles\WpfStyles.csproj", "{C47DC93C-E44B-4C78-AC3B-EA12EAEB90E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesAndTemplatesApp", "TreesAndTemplatesApp\TreesAndTemplatesApp.csproj", "{CCA2A196-B532-4F91-A602-3CEA8FBD608F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{C47DC93C-E44B-4C78-AC3B-EA12EAEB90E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C47DC93C-E44B-4C78-AC3B-EA12EAEB90E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C47DC93C-E44B-4C78-AC3B-EA12EAEB90E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA2A196-B532-4F91-A602-3CEA8FBD608F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA2A196-B532-4F91-A602-3CEA8FBD608F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA2A196-B532-4F91-A602-3CEA8FBD608F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA2A196-B532-4F91-A602-3CEA8FBD608F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{F520E375-8F2C-4F9B-BB5F-599310BA8ED7} = {20E3D8FF-71B6-43B8-8178-DFBA0781604E}
 		{25041E58-90DF-4B02-9537-69C125B77C52} = {20E3D8FF-71B6-43B8-8178-DFBA0781604E}
 		{C47DC93C-E44B-4C78-AC3B-EA12EAEB90E0} = {20E3D8FF-71B6-43B8-8178-DFBA0781604E}
+		{CCA2A196-B532-4F91-A602-3CEA8FBD608F} = {20E3D8FF-71B6-43B8-8178-DFBA0781604E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CD562D3-562C-462F-BC79-41C21053C533}
