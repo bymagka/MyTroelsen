@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultAppDomainApp", "Defa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAppDomain", "CustomAppDomain\CustomAppDomain.csproj", "{6BA81DF1-62DE-42B8-B1BC-7DFC11D069DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectContextApp", "ObjectContextApp\ObjectContextApp.csproj", "{8B579440-3D45-4663-8B4C-692DE5244D14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,10 @@ Global
 		{6BA81DF1-62DE-42B8-B1BC-7DFC11D069DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BA81DF1-62DE-42B8-B1BC-7DFC11D069DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BA81DF1-62DE-42B8-B1BC-7DFC11D069DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B579440-3D45-4663-8B4C-692DE5244D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B579440-3D45-4663-8B4C-692DE5244D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B579440-3D45-4663-8B4C-692DE5244D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B579440-3D45-4663-8B4C-692DE5244D14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +188,7 @@ Global
 		{51E736B4-0457-4B16-92E2-69CED8A28E15} = {C85715A5-A1B6-4B6E-BECA-63E3137EDB6D}
 		{5B3623EB-C52E-42A5-9E58-72F86E74031F} = {681127EC-F9EC-4362-BC13-F419BA695802}
 		{6BA81DF1-62DE-42B8-B1BC-7DFC11D069DB} = {681127EC-F9EC-4362-BC13-F419BA695802}
+		{8B579440-3D45-4663-8B4C-692DE5244D14} = {681127EC-F9EC-4362-BC13-F419BA695802}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CD562D3-562C-462F-BC79-41C21053C533}
