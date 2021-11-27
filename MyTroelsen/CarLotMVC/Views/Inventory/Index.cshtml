@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AutoLotDAL.Models.Inventory>
+
+@using AutoLotDAL.Models
+
+@helper ShowInventory(Inventory car) 
+{ 
+    @car.Make<text> -</text>@car.Color<text>(</text>@car.PetName<text>)</text>
+}
+
+@functions
+{
+
+    public IEnumerable<Inventory> SortCars(IList<Inventory> cars)
+    {
+        var list = from c in cars orderby c.PetName select c;
+
+        return list.ToList();
+
+    }
+
+}
+
+@{ 
+    Func<dynamic, object> bold = @<strong>@item</strong>;
+}
+
+   This will be bold: @bold("Foo")
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PetName)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in SortCars(Model.ToList()))
+    {
+        @*@ShowInventory(item)*@
+        <tr>
+            @Html.DisplayFor(modelItem=>item,"InventoryList")
+        </tr>
+
+    }
+
+</table>
