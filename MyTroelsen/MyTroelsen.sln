@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLotWebApi", "CarLotWebAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{681127EC-F9EC-4362-BC13-F419BA695802}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultAppDomainApp", "DefaultAppDomainApp\DefaultAppDomainApp.csproj", "{5B3623EB-C52E-42A5-9E58-72F86E74031F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,10 @@ Global
 		{51E736B4-0457-4B16-92E2-69CED8A28E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51E736B4-0457-4B16-92E2-69CED8A28E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51E736B4-0457-4B16-92E2-69CED8A28E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B3623EB-C52E-42A5-9E58-72F86E74031F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3623EB-C52E-42A5-9E58-72F86E74031F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3623EB-C52E-42A5-9E58-72F86E74031F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3623EB-C52E-42A5-9E58-72F86E74031F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{EFF32C98-835F-4BF9-909E-391892093EA1} = {C24117B4-AAC4-40D0-9425-802ED0B75729}
 		{837C3818-055E-40FA-912A-FF996B1BDC1A} = {C85715A5-A1B6-4B6E-BECA-63E3137EDB6D}
 		{51E736B4-0457-4B16-92E2-69CED8A28E15} = {C85715A5-A1B6-4B6E-BECA-63E3137EDB6D}
+		{5B3623EB-C52E-42A5-9E58-72F86E74031F} = {681127EC-F9EC-4362-BC13-F419BA695802}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CD562D3-562C-462F-BC79-41C21053C533}
