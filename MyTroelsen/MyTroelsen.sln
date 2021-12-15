@@ -89,6 +89,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLINQDataWithCancellation",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithCSharpAsync", "FunWithCSharpAsync\FunWithCSharpAsync.csproj", "{562587DC-D6BE-4F5D-BC4C-0CF1B1FAC80E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BaseLibraries", "BaseLibraries", "{006DE80F-82FB-4960-AF19-171C33203FBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryApp", "DirectoryApp\DirectoryApp.csproj", "{44298897-4825-42AA-B83A-B09D97467996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +235,10 @@ Global
 		{562587DC-D6BE-4F5D-BC4C-0CF1B1FAC80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{562587DC-D6BE-4F5D-BC4C-0CF1B1FAC80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{562587DC-D6BE-4F5D-BC4C-0CF1B1FAC80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44298897-4825-42AA-B83A-B09D97467996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44298897-4825-42AA-B83A-B09D97467996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44298897-4825-42AA-B83A-B09D97467996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44298897-4825-42AA-B83A-B09D97467996}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -270,6 +278,7 @@ Global
 		{73BBF68B-10E5-4181-9CC2-978FAC19E137} = {D876D6BA-D2BC-4880-9F42-F8365A6BBE9F}
 		{8AF8387A-F910-4CE7-AC0A-6FBF6D9E4B8B} = {D876D6BA-D2BC-4880-9F42-F8365A6BBE9F}
 		{562587DC-D6BE-4F5D-BC4C-0CF1B1FAC80E} = {D876D6BA-D2BC-4880-9F42-F8365A6BBE9F}
+		{44298897-4825-42AA-B83A-B09D97467996} = {006DE80F-82FB-4960-AF19-171C33203FBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CD562D3-562C-462F-BC79-41C21053C533}

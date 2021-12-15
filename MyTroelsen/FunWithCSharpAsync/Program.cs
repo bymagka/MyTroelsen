@@ -13,9 +13,14 @@ namespace FunWithCSharpAsync
         {
             Console.WriteLine("Fun with async");
 
-            List<int> l = default;
+            
 
-            Console.WriteLine(DoWork());
+            string message = await DoWorkAsync();
+
+            await MethodReturningVoidAsync();
+            Console.WriteLine("Void method complete");
+
+            Console.WriteLine(message);
             Console.WriteLine("Completed");
 
             Console.ReadLine();
@@ -25,6 +30,24 @@ namespace FunWithCSharpAsync
         {
             Thread.Sleep(5_000);
             return "Done with work";
+        }
+
+        static async Task<string> DoWorkAsync()
+        {
+            return await Task.Run(() =>
+            {
+                return DoWork();
+            });
+        }
+
+        static async Task MethodReturningVoidAsync()
+        {
+            await Task.Run(() =>
+            {
+                Thread.Sleep(4_000);
+            });
+
+            Console.WriteLine("Void method completed");
         }
     }
 }
