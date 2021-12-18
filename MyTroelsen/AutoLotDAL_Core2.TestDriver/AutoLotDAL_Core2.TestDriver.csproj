@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoLotDAL_Core.Models\AutoLotDAL_Core.Models.csproj" />
+    <ProjectReference Include="..\AutoLotDAL_Core\AutoLotDAL_Core.csproj" />
+  </ItemGroup>
+
+</Project>
